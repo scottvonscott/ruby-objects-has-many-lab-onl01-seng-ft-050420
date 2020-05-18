@@ -19,6 +19,7 @@ class Post
     else
     self.author.name
   end
+  end
 
   def self.all
     @@all
