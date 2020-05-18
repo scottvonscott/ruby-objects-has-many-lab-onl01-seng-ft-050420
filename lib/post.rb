@@ -1,20 +1,20 @@
-class Song
+class Post
 
-  attr_accessor :artist, :name, :genre
+  attr_accessor :author, :title
 
   @@all = []
 
-  def initialize (name)
-    @name = name
+  def initialize (title)
+    @title = title
     save
   end
 
-  def artist=(artist)
-    @artist = artist
+  def author=(author)
+    @author = author
   end
 
-  def artist_name
-    self.artist.name
+  def author_name
+    self.author.name
   end
 
   def self.all
